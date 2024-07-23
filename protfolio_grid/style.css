@@ -1,0 +1,128 @@
+
+:root{
+    --color1:#093E5B;
+    --color2:#0D556A;
+    --color3:#B6C8D1;
+    --color4:#1AAC64;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 40fr;
+    grid-area: 
+    "header header"
+    "main main";
+}
+
+.container .main{
+    grid-area: "main";
+}
+
+.container .header{
+    grid-area: "header";
+    width: 100%;
+    height: 95px;
+    background-color: var(--color1);
+    position: fixed;
+    top: 0px;
+}
+
+.container .header p{
+    grid-area: 1/2/2/3;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.container .main .gallery{
+    min-height: calc(100vh - 95px);
+    margin-top: 115px;
+    margin-left: 20px;
+    padding: 0px 100px 100px;
+}
+
+img{
+    object-fit:contain;
+}
+
+.container .main .about{
+    height: calc(80vh - 210px);
+    padding: 50px 100px;
+    background-color: rgba(0, 0, 0, 0.014);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container .main .contact{
+    height: 20vh;
+    background-color: var(--color3);
+    padding: 30px;
+}
+
+.container .main .gallery .img{
+    width: 100%;
+    height: 500px;
+    background-color: var(--color3);
+}
+
+.title{
+    font-size: 50px;
+    line-height: 30px;
+    color: var(--color2);
+    text-align: center;
+}
+
+.title-2{
+    font-size: 50px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 442px);
+    gap: 20px;
+}
+
+p{
+    line-height: 40px;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+h1 span{
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--color4);
+}
+
+.job-title{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    top: -25px;
+    text-align: center;
+}
+
+.job-title span{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--color4);
+}
+
+

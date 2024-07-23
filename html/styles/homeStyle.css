@@ -1,0 +1,75 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container .main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .main .content{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .main .content .row-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main .content .row-2{
+    font-size: 66px;
+    font-weight: 800;
+    
+}
+
+.container .main .content .row-3{
+
+}
+
+.container .main .content .row-4{
+  display: flex;
+  width: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .main .content .row-4 form input[type="submit"]{
+    padding: 14px 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointers;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .main .content .row-4 form input[type="submit"]:hover{
+    box-shadow: none;
+}
+
+
+.container .main .content .row-4 form input[type="submit"]:nth-child(2){
+    border: solid var(--primary) 1px;
+    background-color: transparent;
+}
+
+.container .main .content .row-4 form input[type="submit"]:nth-child(1){
+    border: solid var(--primary) 1px;
+    background-color: var(--primary);
+    color: white;
+}
+
+

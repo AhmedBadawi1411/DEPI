@@ -1,0 +1,113 @@
+
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+a:visited{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    width: 600px;
+    padding: 100px 50px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.container .card-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:start;
+}
+
+.container .card-header .create-an-account{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.container .card-header .row-2{
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    padding: 0px 50px;
+}
+
+.container form label{
+   margin: 30px 0 10px 0;
+}
+
+.container form .name{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.container form .signup-btn{
+    margin: 60px 0 0 0;
+    width: 50%;
+    align-self:flex-end;
+    padding: 14px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+ }
+
+ .container form .signup-btn:hover{
+    background-color: var(--primary-hover);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+ }
+
+
+ .container form .f-name,
+ .container form .s-name{
+    width: 100%;
+ }
+
+ .container form .name .f-name-container,
+ .container form .name .s-name-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+ }
+
+ input[type="email"],
+ input[type="tel"],
+ input[type="password"],
+ input[type="text"]
+ {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 14px;
+    background-color: var(--input-bcg);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    border: none;
+ }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="stylesheet" href="../styles/signupStyle.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card-header">
+            <div class="row1">
+                <p class="create-an-account">
+                    Create an account
+                </p>
+            </div>
+            <div class="row-2">
+                <div class="col">
+                    <p class="have-account">
+                        already have an account ?
+                    </p>
+                    <a href="./signin.html" class="signin">
+                        Sign in
+                    </a>
+                </div>
+            </div>
+        </div>
+        <form action="./content.html">
+            <div class="name">
+                <div class="f-name-container">
+                    <label for="fname" class="f-name">First Name</label>
+                    <input type="text" name="fname" id="fname" class="f-name">
+                </div>
+                <div class="s-name-container">
+                    <label for="sname" class="f-name">Second Name</label>
+                    <input type="text" name="sname" id="sname" class="s-name">
+                </div>
+            </div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" class="email">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" class="phone">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="password">
+            <label for="re-password">Re-Password</label>
+            <input type="password" name="re-password" id="re-password" class="password">
+            <input type="submit" value="Sign up" class="signup-btn">
+        </form>
+    </div>
+</body>
+</html>

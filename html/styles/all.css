@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --snas:"Montserrat", sans-serif;
+    --serif:"Playfair Display", serif;
+    --def-padding:16px;
+    --input-bcg:#30363c18;
+    --primary:#0B6CD8;
+    --primary-hover:#0B6CD8e5;
+    --font-color:#30363C;
+    --font-color-2: #937E73;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--snas);
+
+}
+
+a:visited{
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+li{
+    list-style: none;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+ul{
+    list-style: none;
+    margin-left: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="passwod"]:focus,
+input[type="tel"]:focus{
+    border: solid 1px var(--primary);
+    outline: none;
+}
+
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--def-padding);
+}
+
+.container .header .left,
+.container .header .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .header .left .col{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container .header .left .col .title{
+   font-size: 24px;
+   font-weight: 700;
+}
